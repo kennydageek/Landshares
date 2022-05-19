@@ -1,0 +1,21 @@
+{
+  "name": "landshares-landing-page",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass -w sass/main.scss  css/style.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennydageek/Landshares.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennydageek/Landshares/issues"
+  },
+  "homepage": "https://github.com/kennydageek/Landshares#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
