@@ -13,6 +13,19 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 1.6rem; }
 
+.button__primary {
+  background-color: #085524;
+  padding: 1rem 3.5rem;
+  margin-right: 2rem;
+  border: 1px solid rgba(117, 159, 117, 0.849);
+  box-shadow: 0.2rem 0.1rem 3rem #000;
+  color: white;
+  text-transform: capitalize;
+  transition: all .5s ease; }
+  .button__primary:hover {
+    background-color: #fff;
+    color: #085524; }
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -21,7 +34,8 @@ body {
 
 .nav-logo {
   width: 5rem;
-  height: 5rem; }
+  height: 5rem;
+  margin-left: 2rem; }
   .nav-logo__logo {
     width: 100%;
     height: 100%; }
@@ -32,7 +46,8 @@ body {
   flex-basis: 50%;
   list-style: none;
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-right: 2rem; }
 
 .nav-list__item {
   border-bottom: 2px solid transparent;
@@ -49,4 +64,23 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 60rem; }
+  .header-text__heading {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase; }
+  .header-text__paragraph {
+    margin-bottom: 2rem; }
+
+.header-button {
+  margin-top: 4rem; }

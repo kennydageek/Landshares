@@ -5,4 +5,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 60rem;
+
+    &__heading {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.header-button {
+    margin-top: 4rem;
 }
