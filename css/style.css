@@ -26,6 +26,29 @@ body {
     background-color: #fff;
     color: #085524; }
 
+.input__email,
+.input__message {
+  width: 40rem;
+  padding: 2rem 0 2rem 1.5rem;
+  display: block;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(117, 159, 117, 0.849);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  transition: all 1s ease; }
+  .input__email:focus,
+  .input__message:focus {
+    outline: 0;
+    border-bottom: 1px solid #103a10; }
+  .input__email::placeholder,
+  .input__message::placeholder {
+    color: rgba(117, 159, 117, 0.849);
+    font-size: 1.6rem; }
+
+.input__message {
+  margin-bottom: 4rem; }
+
 .navigation {
   display: flex;
   justify-content: space-between;
