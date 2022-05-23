@@ -1,0 +1,57 @@
+.footer {
+    background-color: rgba($color-black, .8);
+    color: white;
+
+    &__heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__icon {
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0 8rem 0;
+}
+
+.footer-address {
+
+    &__logo {}
+
+    &__text {
+        word-spacing: 5px;
+    }
+}
+
+.quick-links {
+
+    &__links {
+        list-style: none;
+    }
+
+    &__link {
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.links {
+    color: $color-white;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+
+.fas {
+    color: $color-green;
+}

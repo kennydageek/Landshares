@@ -28,6 +28,7 @@
 }
 
 .about-image {
+    order: -1;
     width: 50rem;
     height: 50rem;
     background-image: linear-gradient(rgba($color-black, .4), rgba($color-black, .5)), url('/images/CEO.jpg');
@@ -35,6 +36,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-right: 8rem;
 
     &__caption {
         position: absolute;
