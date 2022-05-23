@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-around;
     padding: 8rem 0 8rem 0;
+
+    @include respond(tab-land) {
+        flex-wrap: wrap;
+    }
 }
 
 .footer-address {

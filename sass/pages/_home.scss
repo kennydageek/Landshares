@@ -1,6 +1,7 @@
 .section-about {
     margin-top: 2rem;
     padding: 10rem 0;
+
     // background: red;
 }
 
@@ -8,11 +9,23 @@
     padding: 2rem 4rem;
     display: flex;
     justify-content: center;
+
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        padding: 2rem 2rem;
+        // align-items: center;
+    }
 }
 
 .container-left {
     align-self: center;
     flex-basis: 50%;
+
+    @include respond(tab-land) {
+        width: 50rem;
+        align-self: center;
+    }
 }
 
 .container__heading {
@@ -37,6 +50,12 @@
     background-position: center;
     position: relative;
     margin-right: 8rem;
+
+    @include respond(tab-land) {
+        margin-bottom: 4rem;
+        align-self: center;
+        margin-left: 6rem;
+    }
 
     &__caption {
         position: absolute;
@@ -64,9 +83,21 @@
     align-self: center;
     flex-basis: 50%;
     // margin-right: rem;
+
+    @include respond(tab-land) {
+        margin-left: -5rem;
+    }
 }
 
 .container-map {
     width: 50rem;
     height: 50rem;
+
+    @include respond(tab-land) {
+        order: -1;
+        align-self: center;
+        margin-top: -15rem;
+        // margin-right: -4rem;
+        margin-bottom: 5rem;
+    }
 }

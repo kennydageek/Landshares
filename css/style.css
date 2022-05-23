@@ -1,3 +1,18 @@
+/*
+0 - 600px:        Phone
+600 - 900px:      Tablet Portrait
+900px - 1200px:   Tablet landscape
+1200px - 1800px:  Where normal styles appear
+1800px +:         Big desktop
+
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
 *,
 *::after,
 *::before {
@@ -89,10 +104,18 @@ body {
   padding: 2rem 4rem;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 767.98px) {
+    .container {
+      flex-direction: column;
+      padding: 2rem 2rem; } }
 
 .container-left {
   align-self: center;
   flex-basis: 50%; }
+  @media only screen and (max-width: 767.98px) {
+    .container-left {
+      width: 50rem;
+      align-self: center; } }
 
 .container__heading {
   margin-bottom: 2rem; }
@@ -112,6 +135,11 @@ body {
   background-position: center;
   position: relative;
   margin-right: 8rem; }
+  @media only screen and (max-width: 767.98px) {
+    .about-image {
+      margin-bottom: 4rem;
+      align-self: center;
+      margin-left: 6rem; } }
   .about-image__caption {
     position: absolute;
     bottom: 2rem;
@@ -132,10 +160,19 @@ body {
 .form-left {
   align-self: center;
   flex-basis: 50%; }
+  @media only screen and (max-width: 767.98px) {
+    .form-left {
+      margin-left: -5rem; } }
 
 .container-map {
   width: 50rem;
   height: 50rem; }
+  @media only screen and (max-width: 767.98px) {
+    .container-map {
+      order: -1;
+      align-self: center;
+      margin-top: -15rem;
+      margin-bottom: 5rem; } }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
@@ -150,6 +187,9 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 8rem 0 8rem 0; }
+  @media only screen and (max-width: 767.98px) {
+    .footer-container {
+      flex-wrap: wrap; } }
 
 .footer-address__text {
   word-spacing: 5px; }
