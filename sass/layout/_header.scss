@@ -31,4 +31,11 @@
 
 .header-button {
     margin-top: 4rem;
+
+    @include respond(phone) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
 }

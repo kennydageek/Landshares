@@ -23,8 +23,12 @@
     flex-basis: 50%;
 
     @include respond(tab-land) {
-        width: 50rem;
+        width: 40rem;
         align-self: center;
+    }
+
+    @include respond(phone) {
+        width: 100%;
     }
 }
 
@@ -42,8 +46,8 @@
 
 .about-image {
     order: -1;
-    width: 50rem;
-    height: 50rem;
+    width: 40rem;
+    height: 40rem;
     background-image: linear-gradient(rgba($color-black, .4), rgba($color-black, .5)), url('/images/CEO.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,6 +59,7 @@
         margin-bottom: 4rem;
         align-self: center;
         margin-left: 6rem;
+        margin-top: -10rem;
     }
 
     &__caption {
@@ -77,6 +82,10 @@
 .section-contact {
     margin-top: 2rem;
     padding: 10rem 0;
+
+    @include respond(tab-land) {
+        overflow-x: hidden
+    }
 }
 
 .form-left {
@@ -84,14 +93,14 @@
     flex-basis: 50%;
     // margin-right: rem;
 
-    @include respond(tab-land) {
-        margin-left: -5rem;
+    @include respond(phone) {
+        width: 100%;
     }
 }
 
 .container-map {
     width: 50rem;
-    height: 50rem;
+    height: 40rem;
 
     @include respond(tab-land) {
         order: -1;

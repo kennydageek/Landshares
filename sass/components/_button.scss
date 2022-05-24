@@ -8,6 +8,10 @@
     text-transform: capitalize;
     transition: all .5s ease;
 
+    @include respond(phone) {
+        margin-top: 2rem;
+    }
+
     &:hover {
         background-color: $color-white;
         color: rgb(8, 85, 36);

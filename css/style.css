@@ -37,13 +37,16 @@ body {
   color: white;
   text-transform: capitalize;
   transition: all .5s ease; }
+  @media only screen and (max-width: 575.98px) {
+    .button__primary {
+      margin-top: 2rem; } }
   .button__primary:hover {
     background-color: #fff;
     color: #085524; }
 
 .input__email,
 .input__message {
-  width: 40rem;
+  width: 35rem;
   padding: 2rem 0 2rem 1.5rem;
   display: block;
   margin-bottom: 2rem;
@@ -114,8 +117,11 @@ body {
   flex-basis: 50%; }
   @media only screen and (max-width: 767.98px) {
     .container-left {
-      width: 50rem;
+      width: 40rem;
       align-self: center; } }
+  @media only screen and (max-width: 575.98px) {
+    .container-left {
+      width: 100%; } }
 
 .container__heading {
   margin-bottom: 2rem; }
@@ -127,8 +133,8 @@ body {
 
 .about-image {
   order: -1;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/CEO.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +145,8 @@ body {
     .about-image {
       margin-bottom: 4rem;
       align-self: center;
-      margin-left: 6rem; } }
+      margin-left: 6rem;
+      margin-top: -10rem; } }
   .about-image__caption {
     position: absolute;
     bottom: 2rem;
@@ -156,17 +163,20 @@ body {
 .section-contact {
   margin-top: 2rem;
   padding: 10rem 0; }
+  @media only screen and (max-width: 767.98px) {
+    .section-contact {
+      overflow-x: hidden; } }
 
 .form-left {
   align-self: center;
   flex-basis: 50%; }
-  @media only screen and (max-width: 767.98px) {
+  @media only screen and (max-width: 575.98px) {
     .form-left {
-      margin-left: -5rem; } }
+      width: 100%; } }
 
 .container-map {
   width: 50rem;
-  height: 50rem; }
+  height: 40rem; }
   @media only screen and (max-width: 767.98px) {
     .container-map {
       order: -1;
@@ -235,3 +245,8 @@ body {
 
 .header-button {
   margin-top: 4rem; }
+  @media only screen and (max-width: 575.98px) {
+    .header-button {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; } }
