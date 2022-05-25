@@ -74,8 +74,8 @@ body {
   height: 10rem; }
 
 .nav-logo {
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 10rem;
   margin-left: 2rem; }
   .nav-logo__logo {
     width: 100%;
@@ -134,8 +134,8 @@ body {
 .about-image {
   order: -1;
   width: 40rem;
-  height: 40rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/CEO.jpg");
+  height: 47rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/About.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,12 +153,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    text-align: center;
+    width: 100%; }
   .about-image__title {
     display: block;
     color: #fff;
-    font-size: 1.4rem;
-    text-align: center; }
+    font-size: 1.4rem; }
 
 .section-contact {
   margin-top: 2rem;
@@ -192,6 +193,8 @@ body {
     margin-bottom: 1.5rem; }
   .footer__icon:not(:last-of-type) {
     margin-bottom: 1rem; }
+  .footer__logo {
+    width: 100%; }
 
 .footer-container {
   display: flex;
@@ -201,8 +204,10 @@ body {
     .footer-container {
       flex-wrap: wrap; } }
 
-.footer-address__text {
-  word-spacing: 5px; }
+.footer-address {
+  width: 10rem; }
+  .footer-address__text {
+    word-spacing: 5px; }
 
 .quick-links__links {
   list-style: none; }

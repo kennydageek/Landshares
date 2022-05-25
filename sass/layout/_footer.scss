@@ -12,6 +12,10 @@
             margin-bottom: 1rem;
         }
     }
+
+    &__logo {
+        width: 100%;
+    }
 }
 
 .footer-container {
@@ -25,6 +29,7 @@
 }
 
 .footer-address {
+    width: 10rem;
 
     &__logo {}
 
