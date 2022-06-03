@@ -83,18 +83,19 @@ body {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-basis: 50%;
   list-style: none;
   text-transform: uppercase;
   font-weight: 600;
-  margin-right: 2rem; }
+  margin-right: 10rem; }
 
 .nav-list__item {
   border-bottom: 2px solid transparent;
   color: #000;
   transition: all .2s ease;
-  padding-bottom: .5rem; }
+  padding-bottom: .5rem;
+  margin-right: 2rem; }
   .nav-list__item:hover {
     border-bottom: 2px solid rgba(117, 159, 117, 0.849);
     color: #fff; }
@@ -132,21 +133,26 @@ body {
     margin-bottom: 4rem; }
 
 .about-image {
-  order: -1;
+  order: 0;
   width: 40rem;
   height: 47rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/images/About.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
   margin-right: 8rem; }
+  .about-image--logo {
+    display: none;
+    order: -1;
+    background-image: url("/images/logowhite.jpg"); }
+    @media only screen and (max-width: 767.98px) {
+      .about-image--logo {
+        display: block; } }
   @media only screen and (max-width: 767.98px) {
     .about-image {
-      margin-bottom: 4rem;
       align-self: center;
       margin-left: 6rem;
-      margin-top: -10rem; } }
+      margin-top: 5rem; } }
   .about-image__caption {
     position: absolute;
     bottom: 2rem;

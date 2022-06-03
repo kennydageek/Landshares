@@ -18,12 +18,14 @@
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-basis: 50%;
     list-style: none;
     text-transform: uppercase;
     font-weight: 600;
-    margin-right: 2rem;
+    margin-right: 10rem;
+
+
 }
 
 .nav-list {
@@ -37,6 +39,7 @@
         color: $color-black;
         transition: all .2s ease;
         padding-bottom: .5rem;
+        margin-right: 2rem;
 
         &:hover {
             border-bottom: 2px solid $color-green;
